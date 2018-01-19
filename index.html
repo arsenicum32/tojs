@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css" class="css">
+	<link rel="stylesheet" href="css/style.css" class="css">
+</head>
+<body>	
+	
+
+	<div class="wrapper">
+	<header>
+
+		<div class="content">
+				<a href="#" class="logo-left"><img src="images/logo-left.png" alt=""></a>
+	<a href="#" class="logo-right"><img src="images/logo-right.png" alt=""></a>
+
+			<div class="center-col">
+				<div class="row">
+					<div class="col-12">
+						<h1>Стань чемпионом лиги</h1>
+						<h2>Вместе с Хамесом нашим Родригесом</h2>
+						<img src="images/awards.png" class="headerImg" alt="">
+					</div>					
+				</div>
+				<form action="index.html" id="regForm" name="regForm" >
+				<div class="row">
+					
+						<div class="col-6">
+							<input type="text" name="firstname" id="field-firstname" placeholder="Имя">
+							<span class="field-firstname error"  style="display:none">Имя указано не верно</span>
+								<input type="text" name="lastname" id="field-lastname" placeholder="Фамилия">
+						 <span class="field-lastname error"  style="display:none">Фамилия указана не верно</span>
+						</div>
+						<div class="col-6">
+						<input type="tel" name="tel" id="field-tel"  placeholder="+382"    >
+						<span class="field-tel error" style="display:none">Телефон указана не верно</span> 
+							<input type="email" name="email" id="field-email"  data-validation="email"  placeholder="Эл. почта" >
+							<span class="field-email error"  style="display:none">Емейл указан не верно</span> 
+						</div>
+
+					
+				</div>
+				<div class="row">
+											<div class="col-12">
+							<input type="submit" name="submit" class="btn btn-orange btn-50" id="field-submit" value="Порвать всех!" >
+						</div>
+				</div>
+				<div class="loader-wrapper" style="display: none;">
+				<div class="loader" ></div>
+				</div>
+
+			</form>
+			</div>
+		
+		</div>
+
+	</header>
+	<section>
+		<div class="content">
+			<div class="center-col">
+
+			<h1 class="white section">Турнирная таблица</h1>
+			<div class="table-wrapper">
+			<table frame="border" id="grid">
+				<thead>
+					<th data-key="index" data-type="number" data-direction="" ><span class="sort-by">#</span></th>
+					<th data-key="deposit" data-type="number" data-direction=""><span class="sort-by"><div>Объем депозита</div</span></th>
+					<th data-key="acNumber" data-type="number" data-direction=""><span class="sort-by">Номер счёта</span></th>
+					<th data-key="country" data-type="string" data-direction=""><span class="sort-by">Страна</span></th>
+				</thead>
+			<tbody>
+
+			<tr class="orangeRow">
+						<td><span>1</span></td>
+						<td><span>$5 321</span></td>
+						<td><span>123 456 000</span></td>
+						<td><span>ru</span></td>
+					</tr><tr class="orangeRow">
+						<td><span>2</span></td>
+						<td><span>$3 000</span></td>
+						<td><span>425 238 238</span></td>
+						<td><span>es</span></td>
+					</tr><tr class="orangeRow">
+						<td><span>3</span></td>
+						<td><span>$890</span></td>
+						<td><span>212 552 112</span></td>
+						<td><span>cn</span></td>
+					</tr><tr>
+						<td><span>4</span></td>
+						<td><span>$777</span></td>
+						<td><span>123 543 548</span></td>
+						<td><span>ru</span></td>
+					</tr><tr>
+						<td><span>5</span></td>
+						<td><span>$666</span></td>
+						<td><span>090 235 453</span></td>
+						<td><span>es</span></td>
+					</tr><tr>
+						<td><span>6</span></td>
+						<td><span>$555</span></td>
+						<td><span>009 281 443</span></td>
+						<td><span>cn</span></td>
+					</tr><tr>
+						<td><span>7</span></td>
+						<td><span>$444</span></td>
+						<td><span>515 654 522</span></td>
+						<td><span>ru</span></td>
+					</tr><tr>
+						<td><span>8</span></td>
+						<td><span>$333</span></td>
+						<td><span>765 452 241</span></td>
+						<td><span>es</span></td>
+					</tr><tr>
+						<td><span>9</span></td>
+						<td><span>$222</span></td>
+						<td><span>562 183 816</span></td>
+						<td><span>cn</span></td>
+					</tr><tr>
+						<td><span>10</span></td>
+						<td><span>$111</span></td>
+						<td><span>642 452 555</span></td>
+						<td><span>ru</span></td>
+					</tr></tbody>
+			
+			</table>
+			<a class="btn btn-orange btn-50">Порвать всех!</a>
+			</div>
+</div>
+		</div>
+	</section>
+	<section id="text-block">
+		<div class="content">
+			<div class="center-col">
+				<h1 class="section">А судьи кто?</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="videoWrapper">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/xe4CGplmdW0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+	<footer>
+		<div class="content">
+			<div class="center-col">
+				<p>
+					© 1997–2017, Forex Club LTD <br><br>
+
+The Financial Services Centre, P.O. Box 1823, Stoney Ground,<br>
+Kingstown, VC0100, St. Vincent & the Grenadines.
+				</p>
+				<div class="footer-social footer-content">
+	
+<div class="fb-like" data-href="https://www.facebook.com/ForexClub" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+
+	<div class="twitter-btn-box">
+		<a href="https://twitter.com/FXClubOfficial" class="twitter-follow-button" data-lang="en">Follow @FXClubOfficial</a> 
+		</div>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
+
+			<a href="" class="footer-link">Условия перепечатки материалов </a>&nbsp;&nbsp;&nbsp;
+			<a href="" class="footer-link">     Политика безопасности</a>
+
+		</div>
+		<div class="hr"></div>
+		<div class="center-col payments-head"><p>Более 25 удобных способов пополнения и снятия:</p></div>
+
+<div class="center-col">
+	<div class="pay-method">
+            <img src="images/payment-icon-webmoney.png"  class="pay-method-item" alt="webmoney">
+		<img src="images/payment-icon-visa.png" 	  	class="pay-method-item"	alt="visa">
+		<img src="images/payment-icon-skrill.png"	class="pay-method-item" alt="skrill">
+		<img src="images/payment-icon-ya.png"	class="pay-method-item" alt="yandex money">
+		<img src="images/payment-icon-mastercard.png" class="pay-method-item" alt="mastercard">
+		<img src="images/payment-icon-qiwi.png"		class="pay-method-item" alt="qiwi">
+        </div>
+    </div>
+
+		<div class="hr"></div>
+
+		<div class="center-col protect">
+			<img src="images/mcafee.jpg" alt="mcafee" alt="mcafee"> 
+			<img src="images/ssl.png" alt="ssl" alt="ssl">
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="js/base.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11&appId=264789027367973';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
