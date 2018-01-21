@@ -1,0 +1,184 @@
+@import "variables.less";
+@import "main.less";
+@import "header.less";
+@import "head.less";
+@import "section.less";
+@import "form.less";
+@import "table.less";
+
+input {
+  outline: none;
+}
+
+p {
+  font-size: 14px;
+  font-family: @font-Roboto;
+  color: @color_7;
+}
+a {
+  font-size: 14px;
+  font-family: @font-Roboto;
+  color: @color_8;
+  text-decoration: none;
+}
+.hr {
+  border-bottom: 1px dotted #000;
+  width: 100%;
+  margin: 37px 0 37px 0;
+}
+.protect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img:first-child {
+    margin-right: 35px;
+  }
+}
+@media (max-width: 400px) {
+  .paragrapf {
+    width: 80%;
+    left: 10%;
+  }
+}
+.pay-method {
+  width: 100%;
+  margin-bottom: 37px;
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  justify-content: space-between;
+  .pay-method-item {
+    display: block;
+    height: 30px;
+    margin: 5px;
+  }
+}
+.payments-metod {
+  .center-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .pay-method {
+    flex-direction: column;
+  }
+}
+.content {
+  h1.section {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-style: italic;
+  }
+}
+.white {
+  color: @color_2;
+}
+
+.btn-orange {
+  color: @color_6;
+  border: 0;
+  background-color: @background_color_2;
+  box-shadow: 0 1px 0 0 #e7540c, 0 5px 12px -5px #972a00;
+}
+.btn-orange.btn-50 {
+  box-shadow: 0 2px 0 0 #e7540c, 0 5px 29px -9px #000;
+}
+.btn-orange.btn-70 {
+  box-shadow: 0 2px 0 0 #e7540c, 0 5px 29px -9px #000;
+}
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 9px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 24px;
+  font-family: @font-Roboto;
+  color: @color_6;
+  cursor: pointer;
+  font-style: initial;
+  text-decoration: none;
+  text-transform: none;
+  width: 70%;
+  border: 0;
+  box-shadow: 0 2px 0 0 #e7540c, 0 3px 15px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: @background_color_2;
+  color: @color_6;
+  font-size: 1.571rem;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+  height: 3.571rem;
+  margin: 1.429rem auto 3.214rem auto;
+  font-family: @font-Roboto;
+}
+
+span.sort-by {
+  &:after {
+    border: 4px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+    width: 0;
+    border-top-color: @border-sort-icon-top;
+    margin-top: 1px;
+  }
+  &:before {
+    border: 4px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+    width: 0;
+    border-bottom-color: @border-sort-icon-bottom-inactive;
+    margin-top: -9px;
+  }
+  display: block;
+  margin-bottom: 5px;
+}
+span.sort-by.up {
+  &:before {
+    border-bottom-color: @border-sort-icon-bottom;
+  }
+  &:after {
+    border-top-color: @border-sort-icon-top-inactive;
+  }
+}
+.flag {
+  width:10px;
+  height: 6px;
+}
+.flag.Rus {
+  background: url(https://raw.githubusercontent.com/arsenicum32/tojs/gh-pages/images/ruflag.jpg)
+    no-repeat center;
+  width: 10px;
+}
+.flag.Es {
+  background: url(https://raw.githubusercontent.com/arsenicum32/tojs/gh-pages/images/esflag.jpg)
+    no-repeat center;
+  width: 10px;
+}
+.flag.Cn {
+  background: url(https://raw.githubusercontent.com/arsenicum32/tojs/gh-pages/images/cnflag.jpg)
+    no-repeat center;
+  width: 10px;
+}
+@media (orienation: portrait) {
+  .row {
+    display: block;
+  }
+}
