@@ -24,9 +24,9 @@ var validTypes = {
 // данные таблицы
 
 var tdata = [
-  [1,"$5 321","123 456 000","ru"  ],
-  [2,"$3 000","425 238 238","es"  ],
-  [3,"$890","212 552 112","cn"  ],
+  [1,"$5 321","123 456 000","ru" , true ],
+  [2,"$3 000","425 238 238","es" , true ],
+  [3,"$890","212 552 112","cn" , true ],
   [4,"$777","123 543 548","ru"  ],
   [5,"$666","090 235 453","es"  ],
   [6,"$555","009 281 443","cn"  ],
@@ -157,7 +157,7 @@ function renderTable(data){
   var tbody = document.getElementById('tbody');
   tbody.innerHTML = '';
   for(var i in data){
-    tbody.innerHTML += `<tr ${i<3?'class="orangeRow"':''}>
+    tbody.innerHTML += `<tr ${tdata[i][4]===true?'class="orangeRow"':''}>
                     <td><span>${tdata[i][0]}</span></td>
                     <td><span>${tdata[i][1]}</span></td>
                     <td><span>${tdata[i][2]}</span></td>

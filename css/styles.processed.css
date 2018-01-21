@@ -786,6 +786,7 @@ td:nth-child(2) span {
 
 tr.orangeRow td:first-child:after {
   background-image: -ms-linear-gradient(-90deg, #3a4252 0%, #ff6000 100%);
+  background-image: linear-gradient(-90deg, #3a4252 0%, #ff6000 100%);
 }
 
 tr.orangeRow td:nth-child(2) {
